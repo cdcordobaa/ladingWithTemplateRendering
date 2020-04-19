@@ -82,50 +82,73 @@ var n="undefined"!=typeof window&&"undefined"!=typeof document&&"undefined"!=typ
                 ${[{icon:"icon-refresh",title:"Business Consulting",description:e,textLink:"Learn More"},{icon:"icon-shopping_basket",title:"Market Analysis",description:e,textLink:"Learn More"},{icon:"icon-home",title:"User Monitoring",description:e,textLink:"Learn More"},{icon:"icon-replay_5",title:"Insurance Consulting",description:e,textLink:"Learn More"},{icon:"icon-smile-o",title:"Customer Sastistified",description:e,textLink:"Learn More"},{icon:"icon-plug",title:"Plug & Play",description:e,textLink:"Just Try This"}].map((e,t)=>`\n            <div class="col-md-6 col-lg-4 card-padded">\n                <div class="card">\n                    <div class="card-body">\n                        <span class="icon card-icon ${e.icon}">\n                        </span>\n                        <h5 class="card-title">${e.title}</h5>\n                        <h5 class="card-text">${e.description}</h5>\n                        <a href="#" class="card-link">${e.textLink}</a>\n                    </div>\n                </div>\n            </div>\n            `).join("")}
             </div>
         </div>
-    </div>`}(),a);var l=n.p+"0f772963f6de19c0f85a8c50789608bf.png",c=n.p+"3e174946141131937d81bdd792898e32.jpg";const u=document.querySelector("#prototypes");i(function(){const e="Eleifend quam adipiscing vitae proin sagittis nisl. Cursus turpis massa tincidunt dui ut ornare lectus sit.";return r`<div class="container prototype-container">
-    <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-7 left-section">
-            <img src="${l}" alt="Create Prototypes">
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-5 right-section">
-            <h1 class="title">
-                ${"Create interactive prototypes"}
-            </h1>
-            <h5>
-                ${e}
-            </h5>
+    </div>`}(),a);var l=n.p+"0f772963f6de19c0f85a8c50789608bf.png",c=n.p+"3e174946141131937d81bdd792898e32.jpg";const u=document.querySelector("#prototypes");i(function(){const e="Eleifend quam adipiscing vitae proin sagittis nisl. Cursus turpis massa tincidunt dui ut ornare lectus sit.";return r`
+        <div class="container prototype-container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-7 left-section">
+                    <img src="${l}" alt="Create Prototypes">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5 right-section">
+                    <h1 class="title">
+                        ${"Create interactive prototypes"}
+                    </h1>
+                    <h5>
+                        ${e}
+                    </h5>
 
-            <div class="line-block">
-                <span class="icon-check">
-                </span>
-                <h5>
-                    ${"Nulla facilisi morbi tempus iaculis "}
-                </h5>
-            </div>
+                    <div class="line-block">
+                        <span class="icon-check">
+                        </span>
+                        <h5>
+                            ${"Nulla facilisi morbi tempus iaculis "}
+                        </h5>
+                    </div>
 
-            <div class="line-block">
-                <span class="icon-check">
-                </span>
-                <h5>
-                    ${"Tellus integer feugiat scelerisque"}
-                </h5>
-            </div>
+                    <div class="line-block">
+                        <span class="icon-check">
+                        </span>
+                        <h5>
+                            ${"Tellus integer feugiat scelerisque"}
+                        </h5>
+                    </div>
 
-            <div class="user-card">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="line-block">
-                            <img src="${c}" class="user-photo rounded-circle" alt="user Photo">
-                            <div>
-                                <h5 class="card-title">${"Amalia G."}</h5>
-                                <h5>${"Co-founder, XYZ Inc."}</h5>
+                    <div class="user-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="line-block">
+                                    <img src="${c}" class="user-photo rounded-circle" alt="user Photo">
+                                    <div>
+                                        <h5 class="card-title">${"Amalia G."}</h5>
+                                        <h5>${"Co-founder, XYZ Inc."}</h5>
+                                    </div>
+                                </div>
+                                <h5 class="card-text">"${e}"</h5>
                             </div>
                         </div>
-                        <h5 class="card-text">"${e}"</h5>
                     </div>
+
                 </div>
             </div>
-
+        </div>`}(),u);var f=n.p+"e76144cb5a087a44545984a426ecb7a7.jpg";const d=document.querySelector("#aboutus");i(r`<div class="about-container">
+    <h1 class="title">
+        ${"About Us"}
+    </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 left-section">
+                <img src="${f}" class="rounded img-fluid" alt="About Us">
+            </div>
+            <div class="col-sm-12 col-md-6 right-section">
+                <h3>
+                    ${"Create Amazing interactive Props"}
+                </h3>
+                <h5>
+                    ${"Ultricies mi eget mauris pharetra et. Ultrices dui sapien eget mi proin sed. A scelerisque purus semper eget. Faucibus in ornare quam viverra orci. Eget arcu dictum varius duis at consectetur lorem. Tristique senectus et netus et malesuada fames ac turpis. Et molestie ac feugiat sed lectus vestibulum. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci."}
+                </h5>
+                <button type="button" class="button-call-to-action btn btn-primary btn-lg aria-pressed=" true">
+                    ${"Learn More"}
+                </button>
+            </div>
         </div>
     </div>
-</div>`}(),u)}]);
+</div>`,d)}]);

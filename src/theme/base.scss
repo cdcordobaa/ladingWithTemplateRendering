@@ -35,6 +35,13 @@ body {
     font-weight: 400;
   }
 
+  h3 {
+    color: $titles-color;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: normal;
+  }
+
   %color-button {
     background-color: $accent;
     color: white;

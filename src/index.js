@@ -4,4 +4,5 @@ import './styles.scss';
 import './sections/header';
 import './sections/features';
 import './sections/prototypes';
+import './sections/aboutus';
 
