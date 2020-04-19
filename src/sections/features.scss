@@ -1,0 +1,43 @@
+@import "../theme/base.scss";
+
+.feature-container {
+  background-color: $background-2;
+  padding: 2rem 0;
+
+  .title {
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+
+  .card-padded {
+    padding: 15px;
+  }
+
+  .card {
+    background-color: $background-1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0.1rem;
+    border: none;
+
+    .card-body {
+      padding: 2.25rem 1.25rem 1.25rem 1.25rem;
+    }
+
+    .card-title {
+      color: $titles-color;
+      font-size: 400;
+      margin: 1rem 0 0 0;
+    }
+    .card-link {
+      color: $accent;
+      padding-top: 0.5rem;
+    }
+
+    .card-icon {
+      margin: 0.1rem 0;
+    }
+  }
+}
