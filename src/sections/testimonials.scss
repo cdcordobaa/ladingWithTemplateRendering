@@ -1,0 +1,74 @@
+@import "../theme/base.scss";
+
+.testimonials-container {
+  background-color: $background-1;
+  padding: 2.5rem 0;
+
+  .title {
+    text-align: center;
+    padding: 0.5rem 0 2rem 0;
+  }
+
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel {
+    .icon {
+      opacity: 50%;
+    }
+    .carousel-inner {
+      padding-bottom: 3%;
+    }
+    .carousel-indicators {
+      li {
+        background-color: $accent;
+        border-radius: 50%;
+        height: 0.5rem;
+        width: 0.5rem;
+      }
+    }
+    .carousel-inner {
+      text-align: center;
+    }
+
+    .user-photo {
+      max-width: 92px;
+      box-shadow: 0px 15px 21px 5px rgba(28, 27, 28, 0.37);
+      margin: 1.5rem 0;
+    }
+
+    .paragraph {
+      width: 85%;
+      margin: 0 0 1em 0;
+      overflow: hidden;
+      font-style: italic;
+      font-size: 1.2rem;
+      line-break: 1.6rem;
+      font-weight: 200;
+
+      &.line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .user-name {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: $titles-color;
+      margin: 0;
+    }
+
+    .user-company {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: $paragraph-color;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

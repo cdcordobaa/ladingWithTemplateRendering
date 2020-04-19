@@ -5,4 +5,5 @@ import './sections/header';
 import './sections/features';
 import './sections/prototypes';
 import './sections/aboutus';
+import './sections/testimonials';
 
