@@ -32,6 +32,7 @@ body {
     color: $paragraph-color;
     font-size: 0.9rem;
     line-height: 1.6rem;
+    font-weight: 400;
   }
 
   %color-button {
@@ -46,6 +47,7 @@ body {
 
     &:hover {
       background-color: $accent-hover;
+      border-color: $accent;
     }
   }
 
@@ -92,4 +94,7 @@ body {
 }
 .icon-plug:before {
   content: "\f1e6";
+}
+.icon-check:before {
+  content: "\f00c";
 }

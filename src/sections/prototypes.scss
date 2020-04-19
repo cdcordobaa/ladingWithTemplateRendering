@@ -1,0 +1,67 @@
+@import "../theme/base.scss";
+
+.prototype-container {
+  background-color: $background-1;
+  padding: 5rem 0;
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+
+    img {
+      max-height: 30rem;
+    }
+  }
+
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: center;
+
+    .title {
+      margin-bottom: 0.8rem;
+    }
+    [class^="icon-"] {
+      margin-right: 1rem;
+      color: $accent;
+    }
+
+    h5 {
+      margin: 0;
+    }
+
+    .line-block {
+      display: flex;
+      align-items: center;
+      justify-content: stretch;
+      margin: 1rem 0 0 0;
+    }
+    .user-card {
+      margin-top: 2rem;
+      .line-block {
+        margin: 0;
+      }
+      .card-title {
+        color: $titles-color;
+        font-weight: 800;
+      }
+      .user-photo {
+        max-width: 56px;
+        margin-right: 1rem;
+      }
+      .card {
+        box-shadow: 0px 13px 9px -3px rgba(41, 41, 41, 0.589);
+      }
+
+      .card-text {
+        margin-top: 1rem;
+        font-style: italic;
+      }
+    }
+  }
+}

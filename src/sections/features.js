@@ -1,6 +1,4 @@
 import { renderToNode, templateHtml } from '../utils/renderer'
-import headerImg from '../assets/images/landing_1.png';
-
 
 function FeatureComponent() {
 
