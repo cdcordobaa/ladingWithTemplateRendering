@@ -1,0 +1,39 @@
+@import "../theme/base.scss";
+
+.nav-container {
+  .navbar {
+    box-shadow: 0px 13px 9px -3px $accent-transparency;
+    transition: top 0.3s;
+  }
+
+  .nav-text-links {
+    justify-content: center;
+    .navbar-nav {
+      a {
+        color: $paragraph-color;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  .navbar-brand {
+    transition: bottom 0.7s;
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      bottom: -2.5rem;
+      left: 0;
+      right: 0;
+      width: min-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    color: $titles-color;
+    font-size: 1.4rem;
+    font-weight: 600;
+    .point {
+      color: $accent;
+    }
+  }
+}

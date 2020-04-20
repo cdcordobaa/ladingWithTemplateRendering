@@ -81,7 +81,7 @@ async function TestimonialsComponent() {
       let testimonials = templateHtml`
             <div class="container testimonials-container">
                 <h1 class="title">
-                ${"sectionTitle"}
+                ${sectionTitle}
                 </h1>
                 <div class="row">
                     ${TestimonialCarousel(postApiData, userApiData)}
