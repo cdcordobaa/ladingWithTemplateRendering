@@ -12,7 +12,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             minify: false,
             hash: true,
-            title: "My Awesome application",
+            title: "My Awesome int application",
+            favicon: "./src/assets/images/svg_1.svg",
             myPageHeader: "Hello World",
             template: "./src/index.html",
             filename: "./index.html", //relative to root of the application
@@ -29,15 +30,18 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader',
-                ],
+                loader: 'file-loader',
+                options: {
+                    outputPath: "fonts",
+                },
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    'file-loader',
-                ],
+
+                loader: 'file-loader',
+                options: {
+                    outputPath: "img",
+                },
             },
         ],
 

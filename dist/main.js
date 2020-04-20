@@ -69,7 +69,7 @@ var n="undefined"!=typeof window&&"undefined"!=typeof document&&"undefined"!=typ
                     </div>
                 </div>
             </nav>
-        </div>`}(),o);var s=n.p+"a267d2c130f6a900faa1b1960cbf0950.png";const a=document.querySelector("#header");r(i`        
+        </div>`}(),o);var s=n.p+"fonts/a267d2c130f6a900faa1b1960cbf0950.png";const a=document.querySelector("#header");r(i`        
         <div class="container-fluid header-container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-5 header-left-section">
@@ -98,7 +98,7 @@ var n="undefined"!=typeof window&&"undefined"!=typeof document&&"undefined"!=typ
                 ${[{icon:"icon-refresh",title:"Business Consulting",description:e,textLink:"Learn More"},{icon:"icon-shopping_basket",title:"Market Analysis",description:e,textLink:"Learn More"},{icon:"icon-home",title:"User Monitoring",description:e,textLink:"Learn More"},{icon:"icon-replay_5",title:"Insurance Consulting",description:e,textLink:"Learn More"},{icon:"icon-smile-o",title:"Customer Sastistified",description:e,textLink:"Learn More"},{icon:"icon-plug",title:"Plug & Play",description:e,textLink:"Just Try This"}].map((e,t)=>`\n            <div class="col-md-6 col-lg-4 card-padded">\n                <div class="card">\n                    <div class="card-body">\n                        <span class="icon card-icon ${e.icon}">\n                        </span>\n                        <h5 class="card-title">${e.title}</h5>\n                        <h5 class="card-text">${e.description}</h5>\n                        <a href="#" class="card-link">${e.textLink}</a>\n                    </div>\n                </div>\n            </div>\n            `).join("")}
             </div>
         </div>
-    </div>`}(),l);var c=n.p+"0f772963f6de19c0f85a8c50789608bf.png",u=n.p+"3e174946141131937d81bdd792898e32.jpg";const f=document.querySelector("#prototypes");r(function(){const e="Eleifend quam adipiscing vitae proin sagittis nisl. Cursus turpis massa tincidunt dui ut ornare lectus sit.";return i`
+    </div>`}(),l);var c=n.p+"fonts/0f772963f6de19c0f85a8c50789608bf.png",u=n.p+"fonts/3e174946141131937d81bdd792898e32.jpg";const f=document.querySelector("#prototypes");r(function(){const e="Eleifend quam adipiscing vitae proin sagittis nisl. Cursus turpis massa tincidunt dui ut ornare lectus sit.";return i`
         <div class="container prototype-container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-7 left-section">
@@ -145,7 +145,7 @@ var n="undefined"!=typeof window&&"undefined"!=typeof document&&"undefined"!=typ
 
                 </div>
             </div>
-        </div>`}(),f);var d=n.p+"e76144cb5a087a44545984a426ecb7a7.jpg";const h=document.querySelector("#aboutus");r(i`<div class="about-container">
+        </div>`}(),f);var d=n.p+"fonts/e76144cb5a087a44545984a426ecb7a7.jpg";const h=document.querySelector("#aboutus");r(i`<div class="about-container">
     <h1 class="title">
         ${"About Us"}
     </h1>
@@ -167,7 +167,7 @@ var n="undefined"!=typeof window&&"undefined"!=typeof document&&"undefined"!=typ
             </div>
         </div>
     </div>
-</div>`,h);var p=n(1),m=n.n(p);var g=n.p+"32d582d72b9a81ee4ffd4ece3a8b7d0f.jpg",v=n.p+"321ab410186aeae915d2e689116b4346.jpg",y=n.p+"7beff6c5a5f52d076a9c774469ce87da.jpg";(async function(){return new Promise(async(e,t)=>{let n=await async function(){try{const e=await m.a.get("https://jsonplaceholder.typicode.com/posts");return console.log("posts",e),e.data}catch(e){return void console.error(e)}}(),r=await async function(){try{const e=await m.a.get("https://jsonplaceholder.typicode.com/users");return console.log("users",e),e.data}catch(e){return void console.error(e)}}();if(n&&r){e(i`
+</div>`,h);var p=n(1),m=n.n(p);var g=n.p+"fonts/32d582d72b9a81ee4ffd4ece3a8b7d0f.jpg",v=n.p+"fonts/321ab410186aeae915d2e689116b4346.jpg",y=n.p+"fonts/7beff6c5a5f52d076a9c774469ce87da.jpg";(async function(){return new Promise(async(e,t)=>{let n=await async function(){try{const e=await m.a.get("https://jsonplaceholder.typicode.com/posts");return console.log("posts",e),e.data}catch(e){return void console.error(e)}}(),r=await async function(){try{const e=await m.a.get("https://jsonplaceholder.typicode.com/users");return console.log("users",e),e.data}catch(e){return void console.error(e)}}();if(n&&r){e(i`
             <div class="container testimonials-container">
                 <h1 class="title">
                 ${"Testimonials"}
