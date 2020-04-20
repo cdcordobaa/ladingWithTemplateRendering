@@ -2,7 +2,7 @@ import { renderToNode, templateHtml } from '../utils/renderer'
 import sectionImg from '../assets/images/about_1.jpg';
 
 
-function HeaderComponent() {
+function AboutComponent() {
 
     const sectionTitle = 'About Us';
     const sectionSubtitle = 'Create Amazing interactive Props'
@@ -35,4 +35,4 @@ function HeaderComponent() {
 }
 
 const node = document.querySelector('#aboutus')
-renderToNode(HeaderComponent(), node);
+renderToNode(AboutComponent(), node);

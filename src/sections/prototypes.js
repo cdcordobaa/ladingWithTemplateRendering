@@ -4,7 +4,7 @@ import person from '../assets/images/person_1.jpg';
 
 
 
-function HeaderComponent() {
+function PrototypeComponent() {
 
     const sectionTitle = 'Create interactive prototypes';
     const sectionDescription = 'Eleifend quam adipiscing vitae proin sagittis nisl. Cursus turpis massa tincidunt dui ut ornare lectus sit.';
@@ -69,4 +69,4 @@ function HeaderComponent() {
 }
 
 const node = document.querySelector('#prototypes')
-renderToNode(HeaderComponent(), node);
+renderToNode(PrototypeComponent(), node);

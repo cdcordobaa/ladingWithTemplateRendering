@@ -1,34 +1,33 @@
 import { renderToNode, templateHtml } from '../utils/renderer'
-import prototypeImg from '../assets/images/do_ui_kit_download_cta_floating_devices-2x.png';
+import { usersMock, postsMock, fetchTestimonialPosts, fetchTestimonialUsers } from '../utils/api'
 import person1 from '../assets/images/person_1.jpg';
 import person2 from '../assets/images/person_2.jpg';
 import person3 from '../assets/images/person_3.jpg';
 import person4 from '../assets/images/person_4.jpg';
-import { usersMock, postsMock } from '../utils/api'
 
 
-function TestimonialCarousel() {
+function TestimonialCarousel(postApiData, userApiData) {
 
-    let photosArray = [person2, person3, person4, person1];
-    let users = usersMock;
-    let posts = postsMock;
-    const slidersNumber = 6;
+  let photosArray = [person2, person3, person4, person1];
+  let users = userApiData;
+  let posts = postApiData;
+  const slidersNumber = 6;
 
-    //fill testimonials
-    let testimonialData = [];
-    for (let i = 0; i < slidersNumber; i++) {
-        testimonialData.push({
-            photo: photosArray[i % photosArray.length],
-            name: users[i].name,
-            company: users[i].company.name,
-            comments: posts.filter(post => {
-                return post.userId === users[i].id
-            }).map(filteredpost => filteredpost.body).join(' ')
-        })
-    }
-    console.log("testimonials", testimonialData);
+  //fill testimonials
+  let testimonialData = [];
+  for (let i = 0; i < slidersNumber; i++) {
+    testimonialData.push({
+      photo: photosArray[i % photosArray.length],
+      name: users[i].name,
+      company: users[i].company.name,
+      comments: posts.filter(post => {
+        return post.userId === users[i].id
+      }).map(filteredpost => filteredpost.body).join(' ')
+    })
+  }
+  console.log("testimonials", testimonialData);
 
-    const carousel = `
+  const carousel = `
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
           ${testimonialData.map((testimonial, i) => `
@@ -66,23 +65,44 @@ function TestimonialCarousel() {
           <span class="sr-only">Next</span>
         </a>
       </div>`;
-    return carousel;
+  return carousel;
 }
 
-function TestimonialsComponent() {
+async function TestimonialsComponent() {
+
+  return new Promise(async (resolve, reject) => {
+
+    let postApiData = await fetchTestimonialPosts();
+    let userApiData = await fetchTestimonialUsers();
 
     const sectionTitle = 'Testimonials';
 
-    return templateHtml`
-        <div class="container testimonials-container">
-            <h1 class="title">
-            ${sectionTitle}
-            </h1>
-            <div class="row">
-                ${TestimonialCarousel()}
-            </div>
-        </div>`;
+    if (postApiData && userApiData) {
+      let testimonials = templateHtml`
+            <div class="container testimonials-container">
+                <h1 class="title">
+                ${"sectionTitle"}
+                </h1>
+                <div class="row">
+                    ${TestimonialCarousel(postApiData, userApiData)}
+                </div>
+            </div>`;
+      resolve(testimonials)
+    }
+    else {
+      reject("can't load the data required to mount section");
+    }
+
+  })
+
 }
 
-const node = document.querySelector('#testimonials')
-renderToNode(TestimonialsComponent(), node);
+TestimonialsComponent().then(resolvedTempalte => {
+  const node = document.querySelector('#testimonials');
+  renderToNode(resolvedTempalte, node);
+
+}).catch(reason => {
+  console.error("Cant Mount Testimonials", reason);
+})
+
+
